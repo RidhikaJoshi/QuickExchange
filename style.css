@@ -1,0 +1,158 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#nav-bar
+{
+    height:5em;
+    width:100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar h1{
+    font-size:3em;
+    font-weight:900;
+}
+
+
+#container
+{
+    height:25em;
+    width: 90%;
+    /* Adjusted width for smaller screens */
+    max-width: 50em;
+    background-color: rgb(84, 209, 50);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#exchange-rates
+{
+    height:20%;
+    width:80%;
+    background-color: black;
+    margin: 1%;;
+}
+
+
+.currency
+{
+    display: flex;
+    flex-direction: row;
+    margin:1%;
+    height:20%;
+
+}
+
+.input-wrapper input
+{
+    height: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+.input-wrapper input:focus {
+    outline: none;
+    border:1px solid blue;
+}
+.input-wrapper button {
+    height: 50px;
+    width:200px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.input-wrapper button:focus {
+    outline: none;
+    border: 1px solid blue;
+}
+.custom-dropdown {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.custom-dropdown select {
+    height: 50px;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    margin: 0;
+}
+
+.buttons button
+{
+    height:5em;
+    width:10em;
+    border:none;
+    vertical-align: top;
+}
+
+@media (max-width: 768px) {
+    #nav-bar h1 {
+        font-size: 2em;
+    }
+    #container {
+        height: 40em;
+        width: 90%;
+        margin-top: 4em;
+        margin-left:0em;;
+    }
+
+    .currency {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }  
+    .buttons button {
+        width: 19em;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        margin-top: 1em;
+        margin-left: 3em;
+        height: 80px;
+    }
+    .input-wrapper input,
+    .input-wrapper button {
+            width: 20em;
+            height: 30px;
+            margin-left: 1em;
+                       /* Adjusted to 0 for smaller screens */
+    }
+        
+    .input-wrapper button {
+            height: 50px;
+    }
+    .custom-dropdown {
+        display: block;
+        margin-top: 1em;
+        width: 15em;
+            margin-left: 4em;;
+        padding:0;
+        /* Adjusted margin-top for separation */
+    }
+
+    .custom-dropdown select {
+        width: 100%;
+        /* Full width for smaller screens */
+        height: 50px;
+        padding: 5px;
+        border-radius: 3px;
+        border: none;
+        margin: 0;
+    }
+}

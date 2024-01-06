@@ -47,6 +47,7 @@ logRates().then(() => {
 		let r = (result.rates[value2] / result.rates[value1]).toFixed(4);
 		exchange.innerHTML = `1 ${country1.value} = ${r} ${country2.value}`;
 	} else {
+		console.log("hi");
 		console.error("Error fetching exchange rates.");
 	}
 });

@@ -25,7 +25,6 @@
 {
     height:25em;
     width: 90%;
-    /* Adjusted width for smaller screens */
     max-width: 50em;
     background-color: rgb(84, 209, 50);
     margin: auto;
@@ -131,11 +130,13 @@
             width: 20em;
             height: 30px;
             margin-left: 1em;
-                       /* Adjusted to 0 for smaller screens */
+            margin-top: 1em;
     }
         
     .input-wrapper button {
             height: 50px;
+            width: 21.5em;
+           
     }
     .custom-dropdown {
         display: block;

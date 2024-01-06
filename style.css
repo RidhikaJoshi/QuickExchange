@@ -4,12 +4,16 @@
     padding:0;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
+body
+{
+    background-color: #090909;
+}
 #nav-bar
 {
     height:5em;
     width:100%;
-    background-color: aqua;
+    color:whitesmoke;
+    background-color:#188FFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +30,7 @@
     height:25em;
     width: 90%;
     max-width: 50em;
-    background-color: rgb(84, 209, 50);
+    background-color:#188FFF;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -36,6 +40,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border:1px solid white;
 }
   #input::placeholder {
       text-align: center;
@@ -47,8 +52,14 @@
 {
     height:20%;
     width:80%;
-    background-color: rgb(202, 230, 21);
+    background-color: #d6e9f4;
     margin: 1%;;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: larger;
 }
 
 
@@ -70,7 +81,7 @@
 }
 .input-wrapper input:focus {
     outline: none;
-    border:1px solid blue;
+    border:2px solid #05407a;
 }
 .input-wrapper button {
     height: 50px;
@@ -82,7 +93,7 @@
 
 .input-wrapper button:focus {
     outline: none;
-    border: 1px solid blue;
+    border: 2px solid #05407a;
 }
 .custom-dropdown {
     display: inline-block;
@@ -95,6 +106,7 @@
     border-radius: 3px;
     border: none;
     margin: 0;
+        background-color: #d6e9f4;
 }
 
 .buttons button
@@ -102,7 +114,9 @@
     height:5em;
     width:10em;
     border:none;
+    margin-left: 5px;;
     vertical-align: top;
+    background-color: #50C878;
 }
 
 @media (max-width: 768px) {

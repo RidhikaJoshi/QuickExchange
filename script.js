@@ -34,15 +34,20 @@ value2 = value2.slice(0, 3);
 console.log(value2);
 
 async function logRates() {
-	const response = await fetch(
-		"/api/latest?access_key=e9528447911c5638769395778e0e8287"
-	);
-	result = await response.json();
-	console.log(result);
+	try {
+		const response = await fetch(
+			"/api/latest?access_key=e9528447911c5638769395778e0e8287"
+		);
+		result = await response.json();
+		return result;
+	} catch (error) {
+		console.error("Error fetching exchange rates:", error);
+		throw error; // Rethrow the error to be caught in the caller
+	}
 }
 logRates();
 
-logRates().then(() => {
+logRates().then((result) => {
 	if (result && result.rates) {
 		let r = (result.rates[value2] / result.rates[value1]).toFixed(4);
 		exchange.innerHTML = `1 ${country1.value} = ${r} ${country2.value}`;

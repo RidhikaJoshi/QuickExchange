@@ -74,4 +74,6 @@ reverse.addEventListener("click", () => {
 	value1 = value1.slice(0, 3);
 	value2 = country2.value;
 	value2 = value2.slice(0, 3);
+	input.value = "";
+	answer.innerText = "";
 });

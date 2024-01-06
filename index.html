@@ -17,11 +17,11 @@
         <div id="currency1" class="currency">
             <div class="input-wrapper">
                 <form>
-                    <input type="text" placeholder="0" oninput="validateInput(this)">
+                    <input id="input" type="text" placeholder="0" oninput="validateInput(this)">
                 </form>
             </div>
             <div class="custom-dropdown">
-                <select name="country" id="country" required>
+                <select name="country" id="country1" required>
                     <option value="AED-United Arab Emirates">AED-United Arab Emirates</option>
                     <option value="AFN-Afghanistan">AFN-Afghanistan</option>
                     <option value="ALL-Albania">ALL-Albania</option>
@@ -68,7 +68,7 @@
                     <option value="EGP-Egypt">EGP-Egypt</option>
                     <option value="ERN-Eritrea">ERN-Eritrea</option>
                     <option value="ETB-Ethiopia">ETB-Ethiopia</option>
-                    <option value="EUR-Euro">EUR-Euro</option>
+                    <option value="EUR-Euro" selected>EUR-Euro</option>
                     <option value="FJD-Fiji">FJD-Fiji</option>
                     <option value="FKP-Falkland Islands">FKP-Falkland Islands</option>
                     <option value="GBP-United Kingdom">GBP-United Kingdom</option>
@@ -171,7 +171,7 @@
                     <option value="TZS-Tanzania">TZS-Tanzania</option>
                     <option value="UAH-Ukraine">UAH-Ukraine</option>
                     <option value="UGX-Uganda">UGX-Uganda</option>
-                    <option value="USD-United States" selected>USD-United States</option>
+                    <option value="USD-United States" >USD-United States</option>
                     <option value="UYU-Uruguay">UYU-Uruguay</option>
                     <option value="UZS-Uzbekistan">UZS-Uzbekistan</option>
                     <option value="VEF-Venezuela">VEF-Venezuela </option>
@@ -191,16 +191,15 @@
                     <option value="ZMK-Zambian kwacha">ZMK-Zambian kwacha</option>
                     <option value="ZMW-Zambian kwacha">ZMW-Zambian kwacha</option>
                     <option value="ZWL-Zimbabwe">ZWL-Zimbabwe</option>
-
                 </select>
             </div>
         </div>
         <div id="currency2" class="currency">
             <div class="input-wrapper">
-              <button></button>
+              <button id="answer"></button>
             </div>
             <div class="custom-dropdown">
-                <select name="country" id="country" required>
+                <select name="country" id="country2" required>
             <option value="AED-United Arab Emirates">AED-United Arab Emirates</option>
             <option value="AFN-Afghanistan">AFN-Afghanistan</option>
             <option value="ALL-Albania">ALL-Albania</option>
@@ -247,7 +246,7 @@
             <option value="EGP-Egypt">EGP-Egypt</option>
             <option value="ERN-Eritrea">ERN-Eritrea</option>
             <option value="ETB-Ethiopia">ETB-Ethiopia</option>
-            <option value="EUR-Euro" selected>EUR-Euro</option>
+            <option value="EUR-Euro" >EUR-Euro</option>
             <option value="FJD-Fiji">FJD-Fiji</option>
             <option value="FKP-Falkland Islands">FKP-Falkland Islands</option>
             <option value="GBP-United Kingdom">GBP-United Kingdom</option>
@@ -350,7 +349,7 @@
             <option value="TZS-Tanzania">TZS-Tanzania</option>
             <option value="UAH-Ukraine">UAH-Ukraine</option>
             <option value="UGX-Uganda">UGX-Uganda</option>
-            <option value="USD-United States">USD-United States</option>
+            <option value="USD-United States" selected>USD-United States</option>
             <option value="UYU-Uruguay">UYU-Uruguay</option>
             <option value="UZS-Uzbekistan">UZS-Uzbekistan</option>
             <option value="VEF-Venezuela">VEF-Venezuela </option>
@@ -374,8 +373,8 @@
             </div>
         </div>
         <div class="buttons">
-            <button><img src="reverse.png"></button>
-            <button>Convert</button>
+            <button id="reverse"><img src="reverse.png"></button>
+            <button id="convert">Convert</button>
         </div>
     </div>
 

@@ -22,6 +22,7 @@ country1.addEventListener("change", () => {
 	value1 = value1.slice(0, 3);
 	console.log(value1);
 });
+
 country2.addEventListener("change", () => {
 	value2 = country2.value;
 	value2 = value2.slice(0, 3);

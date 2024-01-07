@@ -6,7 +6,10 @@
 }
 body
 {
-    background-color: #090909;
+    /* background-color: #090909; */
+    background-image: url('back.jpg');
+    background-repeat:repeat;
+    background-size: cover;
 }
 #nav-bar
 {
@@ -27,7 +30,7 @@ body
 
 #container
 {
-    min-height:25em;
+    height:25em;
     width: 90%;
     max-width: 50em;
     background-color:#188FFF;
@@ -50,7 +53,7 @@ body
    }
 #exchange-rates
 {
-    height:30%;
+    height:20%;
     width:60%;
     background-color: #d6e9f4;
     margin: 1%;;
@@ -60,6 +63,7 @@ body
     justify-content: center;
     font-weight: 900;
     font-size: larger;
+    border-radius: 3px;
 }
 
 
@@ -117,8 +121,12 @@ body
     margin-left: 5px;;
     vertical-align: top;
     background-color: #50C878;
+    border-radius: 3px;
 }
-
+#convert
+{
+   font-weight: 900;
+}
 @media (max-width: 768px) {
     #nav-bar h1 {
         font-size: 2em;
@@ -161,18 +169,27 @@ body
         display: block;
         margin-top: 1em;
         width: 15em;
-            margin-left: 4em;;
+        margin-left: 4em;;
         padding:0;
-        /* Adjusted margin-top for separation */
     }
 
     .custom-dropdown select {
         width: 100%;
-        /* Full width for smaller screens */
         height: 50px;
         padding: 5px;
         border-radius: 3px;
         border: none;
         margin: 0;
     }
+}
+@media (max-width: 400px)
+{
+    .container{
+        margin-top: 6em;
+        margin-left: 0em;
+    }
+        #exchange-rates
+        {
+            width:90%;
+        }
 }

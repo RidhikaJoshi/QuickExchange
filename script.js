@@ -34,9 +34,7 @@ value2 = value2.slice(0, 3);
 console.log(value2);
 
 async function logRates() {
-	const response = await fetch(
-		"/api/latest?access_key=e9528447911c5638769395778e0e8287"
-	);
+	const response = await fetch("https://open.er-api.com/v6/latest");
 	result = await response.json();
 	console.log(result);
 }

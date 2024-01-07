@@ -16,7 +16,7 @@ body
     height:5em;
     width:100%;
     color:whitesmoke;
-    background-color:#188FFF;
+    background-color:#001B79;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,8 @@ body
     height:25em;
     width: 90%;
     max-width: 50em;
-    background-color:#188FFF;
+    background-color:#001B79;
+    border-radius: 10px;
     margin: auto;
     position: absolute;
     top: 50%;

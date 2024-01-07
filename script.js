@@ -38,7 +38,7 @@ async function logRates() {
 		"/api/latest?access_key=e9528447911c5638769395778e0e8287"
 	);
 	result = await response.json();
-	// console.log(result);
+	console.log(result);
 }
 logRates();
 

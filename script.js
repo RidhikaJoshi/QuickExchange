@@ -36,7 +36,7 @@ console.log(value2);
 async function logRates() {
 	const response = await fetch("https://open.er-api.com/v6/latest");
 	result = await response.json();
-	console.log(result);
+	//console.log(result);
 }
 logRates();
 
@@ -45,7 +45,7 @@ logRates().then(() => {
 		let r = (result.rates[value2] / result.rates[value1]).toFixed(4);
 		exchange.innerHTML = `1 ${country1.value} = ${r} ${country2.value}`;
 	} else {
-		console.log("hi");
+		//console.log("hi");
 		console.error("Error fetching exchange rates.");
 	}
 });
